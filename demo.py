@@ -21,6 +21,14 @@ def main():
     t1.start()
     t2.start()
 
+    while True:
+        print(threading.enumerate())
+        
+        if len(threading.enumerate()) == 1:
+            break
+    
+
+
 
 if __name__ == "__main__":
     main()
